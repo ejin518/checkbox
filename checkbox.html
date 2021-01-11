@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<meta name="robots" content="index,follow">
+<link rel="shortcut icon" href="https://ssl.pstatic.net/sstatic/search/favicon/favicon_140327.ico">
+<title>checkbox</title>
+<link rel="stylesheet" href="common.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+</head>
+<body>
+
+<div class="section06">
+	<div class="inner">
+		<h1>아이비 스피치 수강신청</h1>
+		<p>스피치, 보이스트레이닝 등 아이비 스피치의 다양한 교육과정을 안내해드립니다.</p>
+		<ul class="clfix">
+			<li>
+				<dl>
+					<dt><img src="https://ivyspeech.cafe24.com/images/apply01.png">이름*</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt><img src="https://ivyspeech.cafe24.com/images/apply02.png">연락처*</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt><img src="https://ivyspeech.cafe24.com/images/apply03.png">이메일</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+				<dl>
+					<dt><img src="https://ivyspeech.cafe24.com/images/apply04.png">연락가능한시간</dt>
+					<dd><input type="text" /></dd>
+				</dl>
+			</li>
+			<li>
+				<div class="textarea">
+					<textarea placeholder="내용을 입력해주세요."></textarea>
+				</div>
+			</li>
+		</ul>
+		<label class="control">개인정보취급방침에 동의 <a href="">[자세히 보기]</a>
+			 <input type="checkbox"/>
+			 <div class="control__indicator"></div>
+		</label>
+	</div>
+</div>
+
+<style>
+
+.section06 {padding:150px 3%; background:url(https://ivyspeech.cafe24.com/images/sec6_bg.jpg)center center no-repeat;}
+.section06 h1 {font-size:40px; color:#fff; text-align:center;}
+.section06 p {font-size:20px; color:#fff; text-align:center;}
+.section06 ul {margin-left:-10px; margin-right:-10px; margin-top:50px;}
+.section06 ul li {float:left; width:50%; padding:0 10px;}
+.section06 ul li dl {display:table; width:100%; padding:15px; border-bottom:1px solid #fff;}
+.section06 ul li dl dt {display:table-cell; width:30%; vertical-align:middle; font-size:18px; color:#fff; line-height:1;}
+.section06 ul li dl dt img {vertical-align:middle; margin-right:10px;}
+.section06 ul li dl dd {display:table-cell; width:70%}
+.section06 ul li dl dd input {background:none; border:none; outline:none;}
+.textarea textarea {height:240px;  width:100%; background:none;border:1px solid #fff; padding:10px; color:#fff;}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color:#fff;
+  line-height:1;
+}
+
+.control a {color:#fff;}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border:1px solid #fff;
+}
+
+
+.control input:checked ~ .control__indicator {
+  background: #fff;
+}
+
+
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+
+@media screen and (max-width:1200px){
+
+.section06 ul li dl dt {width:35%;}
+.section06 ul li dl dd {width:65%;}
+
+}
+
+@media screen and (max-width:1024px){
+
+.section06 {padding:14.6vw 3%;}
+.section06 ul li dl {padding:0.97vw; height:5.85vw;}
+.section06 ul li dl dt {font-size:1.75vw;}
+.section06 ul li dl dt img {width:1.95vw;}
+.section06 ul li dl dd {font-size:1.75vw;}
+.textarea textarea {height:23.43vw;}
+
+
+}
+
+@media screen and (max-width:768px){
+
+
+.section06 {padding:19.53vw 3%;}
+.section06 ul {margin-top:30px;}
+.section06 ul li {float:none; width:100%; padding:20px 0;}
+.section06 ul li dl {padding:1.95vw; height:7.81vw;}
+.section06 ul li dl dt {font-size:16px;}
+.section06 ul li dl dt img {width:20px;}
+.section06 ul li dl dd {font-size:16px;}
+ 
+.textarea textarea {height:31.25VW;}
+
+}
+
+
+</style>
+
+</body>
+</html>
